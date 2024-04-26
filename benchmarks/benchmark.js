@@ -15,6 +15,8 @@ performance.mark('start');
 
 // EXERCISE 💪
 
+%NeverOptimizeFunction(add);
+
 while (iterations--) {
   add(a, b);
 }
@@ -25,5 +27,5 @@ performance.mark('end');
 
 performance.measure('My Special Benchmark', 'start', 'end');
 
-const [ measure ] = performance.getEntriesByName('My Special Benchmark');
+const [measure] = performance.getEntriesByName('My Special Benchmark');
 console.log(measure);
