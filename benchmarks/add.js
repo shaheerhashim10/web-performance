@@ -3,5 +3,5 @@ function add(x, y) {
 }
 
 add(1, 2);
-%OptimizeFunctionOnNextCall(add);
+OptimizeFunctionOnNextCall(add);
 add(3, 4);
